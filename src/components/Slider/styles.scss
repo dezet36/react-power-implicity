@@ -1,0 +1,35 @@
+.slider {
+  display: grid;
+  place-items: center;
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    width: 250px;
+    margin-bottom: 245px;
+
+    li {
+      border: 3px solid rgba(196, 196, 196, 0.16);
+      width: 16px;
+      height: 16px;
+      border-radius: 100%;
+      margin: auto;
+    }
+    .dot__active {
+      border: 3px solid #fff;
+    }
+  }
+
+  @media (max-width: 768px) {
+    ul {
+      width: 180px;
+      margin-bottom: 80px;
+    }
+    li {
+      border: 2px solid rgba(196, 196, 196, 0.16);
+    }
+    .dot__active {
+      border: 2px solid #fff;
+    }
+  }
+}
