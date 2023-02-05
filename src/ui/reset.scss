@@ -1,0 +1,32 @@
+body,
+div,
+header,
+ul,
+li,
+a,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #fc3f5f, #7d61ff) fixed;
+  font-family: "Helvetica";
+}
+
+button {
+  border: 0;
+  font-family: inherit;
+  background-color: transparent;
+}
+a {
+  text-decoration: none;
+  font-family: inherit;
+}
+li {
+  list-style-type: none;
+  font-family: "Helvetica";
+}

@@ -1,19 +1,22 @@
 import "./styles.scss";
-import logo from "../../assets/icons/Vector.svg";
+import logo from "../../assets/icons/logo.svg";
 
 export const Header = () => {
   return (
     <div className="header">
       <img src={logo} alt="" className="header__img" />
-
       <nav className="header__nav">
-        <a href="#">Features</a>
-        <a href="#">Partners</a>
-        <a href="#">Stories</a>
+        <a className="header__nav-link" href="#">
+          Features
+        </a>
+        <a className="header__nav-link" href="#">
+          Partners
+        </a>
+        <a className="header__nav-link" href="#">
+          Stories
+        </a>
       </nav>
-      <div className="header__btn">
-        <button>Download for free</button>
-      </div>
+      <button className="header__btn">Download for free</button>
     </div>
   );
 };

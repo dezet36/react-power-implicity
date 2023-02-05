@@ -1,35 +1,32 @@
 .slider {
   display: grid;
   place-items: center;
-  ul {
+  &__dots {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     place-items: center;
-    width: 250px;
-    margin-bottom: 245px;
+    margin: 0px 0px 245px 35px;
 
-    li {
+    @media (max-width: 768px) {
+      margin-bottom: 80px;
+    }
+
+    &-dot {
       border: 3px solid rgba(196, 196, 196, 0.16);
       width: 16px;
       height: 16px;
       border-radius: 100%;
-      margin: auto;
+      margin-right: 35px;
+
+      @media (max-width: 768px) {
+        border: 2px solid rgba(196, 196, 196, 0.16);
+      }
     }
     .dot__active {
       border: 3px solid #fff;
-    }
-  }
-
-  @media (max-width: 768px) {
-    ul {
-      width: 180px;
-      margin-bottom: 80px;
-    }
-    li {
-      border: 2px solid rgba(196, 196, 196, 0.16);
-    }
-    .dot__active {
-      border: 2px solid #fff;
+      @media (max-width: 768px) {
+        border: 2px solid #fff;
+      }
     }
   }
 }

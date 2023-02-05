@@ -5,12 +5,12 @@ export const Sliders = () => {
   return (
     <div className="slider">
       <Card />
-      <ul>
-        <li className="dot__active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul className="slider__dots">
+        <li className="slider__dots-dot"></li>
+        <li className="slider__dots-dot"></li>
+        <li className="slider__dots-dot dot__active"></li>
+        <li className="slider__dots-dot"></li>
+        <li className="slider__dots-dot"></li>
       </ul>
     </div>
   );
