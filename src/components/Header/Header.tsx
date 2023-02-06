@@ -1,10 +1,10 @@
 import "./styles.scss";
-import logo from "../../assets/icons/logo.svg";
+import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
 
 export const Header = () => {
   return (
     <div className="header">
-      <img src={logo} alt="" className="header__img" />
+      <Logo />
       <nav className="header__nav">
         <a className="header__nav-link" href="#">
           Features
